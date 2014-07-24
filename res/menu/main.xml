@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/playtime"
+        android:title="@string/menu_play_time">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/oneSec"
+                    android:title="@string/submenu_one">
+                </item>
+                <item
+                    android:id="@+id/twoSec"
+                    android:title="@string/submenu_two">
+                </item>
+                <item
+                    android:id="@+id/fiveSec"
+                    android:title="@string/submenu_five">
+                </item>
+                <item
+                    android:id="@+id/tenSec"
+                    android:title="@string/submenu_ten">
+                </item>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/reset"
+        android:title="@string/menu_reset">
+    </item>
+
+</menu>

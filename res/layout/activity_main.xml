@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+  <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="100dp"
+    android:layout_height="75dp"
+    android:layout_gravity="center"> 
+    
+    <TextView
+        android:id="@+id/playone"
+        android:paddingBottom="@dimen/bottom_pad"
+        android:paddingTop="@dimen/top_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center">
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/pic_one"
+        android:src="@drawable/red"
+        android:paddingBottom="@dimen/bottom_pad"
+        android:paddingTop="@dimen/top_pad"
+        android:layout_width="@dimen/main_imageview"
+        android:layout_height="@dimen/main_imageview"
+        android:layout_gravity="center">
+    </ImageView>
+    </LinearLayout>
+
+    
+    <RatingBar android:id="@+id/score_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_gap"
+        android:isIndicator="true"
+        android:numStars="@integer/max_score"
+        android:layout_gravity="center">
+    </RatingBar>
+    
+  <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="100dp"
+    android:layout_height="75dp"
+    android:layout_gravity="center"> 
+    
+    <TextView
+        android:id="@+id/playtwo"
+        android:paddingBottom="@dimen/bottom_pad"
+        android:paddingTop="@dimen/top_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center">
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/pic_two"
+        android:src="@drawable/blue"
+        android:paddingBottom="@dimen/bottom_pad"
+        android:paddingTop="@dimen/top_pad"
+        android:layout_width="@dimen/main_imageview"
+        android:layout_height="@dimen/main_imageview"
+        android:layout_gravity="center">
+    </ImageView>
+    </LinearLayout>
+   <RatingBar android:id="@+id/score_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_gap"
+        android:isIndicator="true"
+        android:numStars="@integer/max_score"
+        android:layout_gravity="center">
+    </RatingBar>
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:gravity="center">
+        <ImageButton android:id="@+id/start_button"
+            android:layout_width="@dimen/start_button_width"
+            android:layout_height="@dimen/start_button_height"
+            android:background="@android:color/black"
+            android:src="@drawable/startup"
+            android:scaleType="fitCenter"
+            android:text="@string/start_button_text"
+            android:onClick="myClickHandler">
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
